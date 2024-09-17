@@ -9,6 +9,7 @@ export const getPersonAvatarPicture = async (sex: string, age: number) => {
   switch (true) {
     case age <= 3:
       return faker.image.urlLoremFlickr({
+        ...imageDefaults,
         category: `baby${sex == 'male' ? 'boy' : 'girl'},baby/all`,
       });
     case age > 3 && age < 12:
