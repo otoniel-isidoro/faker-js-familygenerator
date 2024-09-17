@@ -1,0 +1,4 @@
+{
+  "corsProxy": false,
+  "startCommand": "sh ./start.sh"
+}
