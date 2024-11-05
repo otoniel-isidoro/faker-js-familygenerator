@@ -40,7 +40,7 @@ import { getRandomInt, getPersonAvatarPicture } from './fakerUtils';
 
     const zipCode = faker.location.zipCode();
 
-    const pattern = new RegExp(`[+]1${areaCode}55501[0-9]{2}`);
+    const pattern = new RegExp(`${areaCode}55501[0-9]{2}`);
 
     const phoneNumber = faker.helpers.fromRegExp(pattern);
     appDiv.innerHTML += `
